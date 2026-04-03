@@ -13,7 +13,7 @@ int main() {
 
 	srand(time(NULL));
 	init(&nums);
-	sort(&nums, animate_mark_swap);
+	sort(&nums, animate_swap_swap);
 
 	// XXX(1)
 	printf("\n");
