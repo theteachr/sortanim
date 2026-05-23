@@ -1,21 +1,12 @@
 #include "core.h"
 #include <stdbool.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 void swap(struct Arr* arr, int a, int b) {
 	int temp = arr->elems[a];
 	arr->elems[a] = arr->elems[b];
 	arr->elems[b] = temp;
-}
-
-void sort(struct Arr* nums, swap_fn swap) {
-	for (int i = 0; i < nums->size; i++) {
-		for (int j = i; j < nums->size; j++) {
-			if (nums->elems[i] > nums->elems[j]) {
-				swap(nums, i, j);
-			}
-		}
-	}
 }
 
 void init(struct Arr* arr) {
@@ -33,3 +24,12 @@ bool is_sorted(struct Arr* arr) {
 
 	return true;
 }
+
+void print_arr(struct Arr* arr) {
+	for (int i = 0; i < arr->size; i++) {
+		printf("%2d ", arr->elems[i]);
+	}
+
+	printf("\n");
+}
+

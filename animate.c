@@ -4,14 +4,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void print_arr(struct Arr* arr) {
-	for (int i = 0; i < arr->size; i++) {
-		printf("%2d ", arr->elems[i]);
-	}
-
-	printf("\n");
-}
-
 void print_offset(struct Arr* arr, int a, int b) {
 	for (int i = 0; i < a; i++) {
 		printf("   ");

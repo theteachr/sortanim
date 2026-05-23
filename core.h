@@ -9,6 +9,6 @@ struct Arr {
 typedef void (*swap_fn)(struct Arr*, int, int);
 
 void swap(struct Arr*, int, int);
-void sort(struct Arr*, swap_fn);
 void init(struct Arr*);
 bool is_sorted(struct Arr*);
+void print_arr(struct Arr*);

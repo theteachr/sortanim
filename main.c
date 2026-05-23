@@ -5,6 +5,7 @@
 #include <unistd.h>
 #include "core.h"
 #include "animate.h"
+#include "sort.h"
 
 int main() {
 	struct Arr nums = {
